@@ -23,10 +23,12 @@
     ./utils/wilder.nix
   ];
 
-  colorschemes.dracula.enable = true;
+  colorschemes.catppuccin.enable = true;
   plugins.web-devicons.enable = true;
 
-  diagnostics = { virtual_lines.only_current_line = true; };
+  diagnostics = {
+    virtual_lines.only_current_line = true;
+  };
 
   extraConfigVim = ''
     autocmd BufRead,BufNewFile *.pl set filetype=prolog
@@ -99,7 +101,7 @@
       options.desc = "Format the current buffer";
     }
 
-    # Git    
+    # Git
     {
       mode = "n";
       key = "<leader>g";
@@ -191,7 +193,7 @@
       options.desc = "Escape terminal mode";
     }
 
-    # Trouble 
+    # Trouble
     {
       mode = "n";
       key = "<leader>d";

@@ -17,6 +17,7 @@
           package = pkgs.swi-prolog;
         };
         ruff.enable = true;
+        cmake.enable = true;
       };
       keymaps.lspBuf = {
         "gd" = "definition";
