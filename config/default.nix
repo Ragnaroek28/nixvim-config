@@ -22,14 +22,13 @@
     ./utils/which-key.nix
     ./utils/wilder.nix
     ./utils/conform.nix
+    ./utils/markdown-preview.nix
   ];
 
   colorschemes.catppuccin.enable = true;
   plugins.web-devicons.enable = true;
 
-  diagnostics = {
-    virtual_lines.only_current_line = true;
-  };
+  diagnostics = { virtual_lines.only_current_line = true; };
 
   extraConfigVim = ''
     autocmd BufRead,BufNewFile *.pl set filetype=prolog
@@ -180,9 +179,7 @@
       mode = "n";
       key = "<leader>lg";
       action = "<cmd>LazyGit<CR>";
-      options = {
-        desc = "LazyGit";
-      };
+      options = { desc = "LazyGit"; };
     }
 
     # Terminal
