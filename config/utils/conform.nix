@@ -2,7 +2,7 @@
   plugins.conform-nvim = {
     enable = true;
     settings = {
-      formatters_by_ft = { cpp = [ "clang_format" ]; };
+      formatters_by_ft = { cpp = [ "clang_tidy --format-style='file'" ]; };
 
       format_on_save = {
         timeout_ms = 1500;
