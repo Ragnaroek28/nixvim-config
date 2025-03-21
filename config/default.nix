@@ -23,6 +23,7 @@
     ./utils/wilder.nix
     ./utils/conform.nix
     ./utils/markdown-preview.nix
+    ./utils/sleuth.nix
   ];
 
   colorschemes.catppuccin.enable = true;
