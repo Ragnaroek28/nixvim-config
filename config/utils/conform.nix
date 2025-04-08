@@ -5,6 +5,8 @@
       formatters_by_ft = {
         cpp = [ "clang_tidy --format-style='file'" ];
         nix = [ "nixfmt" ];
+        tex = [ "tex-fmt --nowrap" ];
+        latex = [ "tex-fmt --nowrap" ];
       };
 
       format_on_save = {
