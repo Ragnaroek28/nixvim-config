@@ -20,6 +20,10 @@
         ruff.enable = true;
         cmake.enable = true;
         texlab.enable = true;
+        julials = {
+          enable = true;
+          package = null;
+        };
       };
       keymaps.lspBuf = {
         "gd" = "definition";
