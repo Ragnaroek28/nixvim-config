@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       formatters_by_ft = {
-        cpp = [ "clang_tidy --format-style='file'" ];
+        cpp = [ "clang-tidy --format-style='file'" ];
         nix = [ "nixfmt" ];
         tex = [ "tex-fmt --nowrap" ];
         latex = [ "tex-fmt --nowrap" ];
