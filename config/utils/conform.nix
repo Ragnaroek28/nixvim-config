@@ -3,18 +3,18 @@
     enable = true;
     settings = {
       formatters_by_ft = {
-        cpp = [ "clang-tidy" ];
-        c = [ "clang-tidy" ];
+        cpp = [ "clang-format" ];
+        c = [ "clang-format" ];
         nix = [ "nixfmt" ];
         tex = [ "tex-fmt --nowrap" ];
         latex = [ "tex-fmt --nowrap" ];
       };
 
       formatters = {
-        clang-tidy = {
-          command = "clang-tidy";
-          args = [ "--format-style=file" "--quiet" "--" ];
-          stdin = false;
+        clang-format = {
+          command = "clang-format";
+          args = [ "--style=file" ];
+          stdin = true;
         };
       };
 
