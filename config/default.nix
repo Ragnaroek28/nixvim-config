@@ -24,7 +24,6 @@
     ./utils/conform.nix
     ./utils/markdown-preview.nix
     ./utils/sleuth.nix
-    ./utils/distant.nix
   ];
 
   colorschemes.catppuccin.enable = true;
