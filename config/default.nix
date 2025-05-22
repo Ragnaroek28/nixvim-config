@@ -13,6 +13,7 @@
     ./nvim-tree.nix
     ./options.nix
     ./treesitter.nix
+    ./clipboard.nix
     ./utils/auto-pairs.nix
     ./utils/autosave.nix
     ./utils/blankline.nix
