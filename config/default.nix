@@ -25,6 +25,14 @@
     ./utils/conform.nix
     ./utils/markdown-preview.nix
     ./utils/sleuth.nix
+    ./utils/surround.nix
+    ./utils/chadtree.nix
+    ./utils/dropbar.nix
+    ./utils/dashboard.nix
+    ./utils/image.nix
+    ./utils/nix-develop.nix
+    ./utils/surround.nix
+    ./utils/vim-be-good.nix
   ];
 
   colorschemes.catppuccin.enable = true;

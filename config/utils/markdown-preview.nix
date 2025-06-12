@@ -1,10 +1,8 @@
 {
-  plugins.markdown-preview = {
+  plugins.markview = {
     enable = true;
     settings = {
-      auto_close = 1;
-      auto_start = 1;
-      theme = "dark";
+
     };
   };
 }
