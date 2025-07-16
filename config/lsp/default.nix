@@ -18,7 +18,7 @@
           package = pkgs.swi-prolog;
         };
         ruff.enable = true;
-        cmake.enable = true;
+        neocmake.enable = true;
         texlab.enable = true;
         julials = {
           enable = true;

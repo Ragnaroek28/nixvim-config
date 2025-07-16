@@ -15,7 +15,7 @@
         goimports.enable = true;
         ktlint.enable = true;
         nixfmt.enable = true;
-        markdownlint.enable = true;
+        markdownlint.enable = false;
         shellharden.enable = true;
         shfmt.enable = true;
       };
