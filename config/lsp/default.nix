@@ -19,7 +19,7 @@
         };
         ruff.enable = true;
         neocmake.enable = true;
-        texlab.enable = true;
+        texlab = { enable = true; };
         julials = {
           enable = true;
           package = null;

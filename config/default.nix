@@ -14,6 +14,7 @@
     ./options.nix
     ./treesitter.nix
     ./clipboard.nix
+    ./filetype.nix
     ./utils/auto-pairs.nix
     ./utils/autosave.nix
     ./utils/blankline.nix
