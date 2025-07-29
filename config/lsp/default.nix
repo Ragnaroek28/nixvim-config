@@ -1,23 +1,15 @@
-{ pkgs, ... }:
+_:
 
 {
+  # plugins.lspconfig.enable = true; # doesnt work, dont know why
   plugins = {
     clangd-extensions = { enable = true; };
     lsp = {
       enable = true;
       servers = {
-        bashls.enable = true;
         clangd.enable = true;
         elixirls.enable = true;
-        gleam.enable = true;
-        gopls.enable = true;
-        kotlin_language_server.enable = true;
         nixd.enable = true;
-        prolog_ls = {
-          enable = true;
-          package = pkgs.swi-prolog;
-        };
-        ruff.enable = true;
         neocmake.enable = true;
         texlab = { enable = true; };
         julials = {

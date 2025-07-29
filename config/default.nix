@@ -2,12 +2,10 @@
   imports = [
     ./bufferline.nix
     ./cmp.nix
-    ./copilot-chat.nix
     ./git.nix
     ./lightline.nix
     ./lsp/default.nix
     ./lsp/fidget.nix
-    ./lsp/ionide.nix
     ./lsp/none-ls.nix
     ./lsp/trouble.nix
     ./nvim-tree.nix
@@ -16,7 +14,6 @@
     ./clipboard.nix
     ./filetype.nix
     ./utils/auto-pairs.nix
-    ./utils/autosave.nix
     ./utils/blankline.nix
     ./utils/lazygit.nix
     ./utils/telescope.nix
@@ -29,11 +26,11 @@
     ./utils/surround.nix
     ./utils/chadtree.nix
     ./utils/dropbar.nix
-    ./utils/dashboard.nix
     ./utils/image.nix
     ./utils/nix-develop.nix
     ./utils/surround.nix
     ./utils/vim-be-good.nix
+    ./utils/vimtex.nix
   ];
 
   colorschemes.catppuccin.enable = true;
