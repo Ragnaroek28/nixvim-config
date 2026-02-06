@@ -6,6 +6,7 @@
       cmd = [
           "clangd"
           "--background-index"
+          "--query-driver=/nix/store/*-clang-wrapper*/bin/clang++"
         ];
         filetypes = [
           "c"
