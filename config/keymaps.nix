@@ -70,5 +70,13 @@ in {
       options = opts;
       mode = "v";
     }
+
+    # formatting
+    {
+      action = ":lua require(\"conform\").format()";
+      key = "<C-S>F";
+      options = opts;
+      mode = "n";
+    }
   ];
 }
