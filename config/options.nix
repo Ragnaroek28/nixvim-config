@@ -25,5 +25,7 @@
     ignorecase = true;
     smartcase = true;
   };
-
+  globals = {
+    mapleader = " ";
+  };
 }
