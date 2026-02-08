@@ -3,7 +3,8 @@ let
     noremap = true;
     silent = true;
   };
-in {
+in
+{
   keymaps = [
     # better window navigation
     {
@@ -56,7 +57,7 @@ in {
       options = opts;
       mode = "n";
     }
-    
+
     # visual mode
     {
       action = "<gv";
@@ -73,10 +74,36 @@ in {
 
     # formatting
     {
-      action = ":lua require(\"conform\").format()";
-      key = "<C-S>F";
-      options = opts;
       mode = "n";
+      key = "<Leader>f";
+      options = {
+        desc = "Format the current Buffer using Conform";
+      };
+      action.__raw = ''
+        function()
+          require("conform").format({ async = true }, function(err, did_edit)
+            if not err and did_edit then
+              vim.notify("Code formatted", vim.log.levels.INFO, { title = "Conform" })
+            end
+          end)
+        end
+      '';
+    }
+    {
+      mode = [ "n" "v" ];
+      key = "<Leader>F";
+      options = {
+        desc = "Format injected Languages using Conform";
+      };
+      action.__raw = ''
+        function()
+          require("conform").format({ formatters = { "injected" }, timeout_ms = 3000 }, function(err, did_edit)
+            if not err and did_edit then
+              vim.notify("Code formatted", vim.log.levels.INFO, { title = "Conform" })
+            end
+          end)
+        end
+      '';
     }
   ];
 }
