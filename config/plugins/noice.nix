@@ -3,6 +3,6 @@
     noice = {
       enable = true;
     };
-    snacks.enable = true;
+    notify.enable = true;
   };
 }
