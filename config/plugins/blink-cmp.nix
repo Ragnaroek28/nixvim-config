@@ -60,6 +60,7 @@
         signature.enabled = true;
       };
     };
+    blink-compat.enable = true;
     blink-cmp-latex.enable = true;
 
   };
