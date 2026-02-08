@@ -1,5 +1,8 @@
 {
-    plugins.noice = {
-        enable = true;
+  plugins = {
+    noice = {
+      enable = true;
     };
+    snacks.enable = true;
+  };
 }
