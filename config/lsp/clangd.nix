@@ -1,10 +1,10 @@
-{
+{ pkgs, ... }: {
   lsp.servers.clangd = {
     enable = true;
-    packageFallback = true;
+    packageFallback = false;
     config = {
       cmd = [
-          "clangd"
+          "${pkgs.clang-tools}"
           "--background-index"
           "--query-driver=/nix/store/*-clang-wrapper*/bin/clang++"
         ];
