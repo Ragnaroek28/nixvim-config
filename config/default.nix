@@ -14,16 +14,18 @@
     ./plugins/yazi.nix
     ./plugins/dropbar.nix
     ./plugins/lualine.nix
-    ./plugins/bufferline.nix
+    ./plugins/barbar.nix
     ./plugins/startup.nix
     ./plugins/image.nix
     ./plugins/nix.nix
     ./plugins/git.nix
     ./plugins/which-key.nix
-    ./plugins/autopairs.nix
+    ./plugins/autoclose.nix
     ./plugins/conform.nix
     ./plugins/indent-blankline.nix
     ./plugins/noice.nix
+    ./plugins/todo-comments.nix
+    ./plugins/auto-save.nix
 
     ./lsp.nix
     ./lsp/clangd.nix

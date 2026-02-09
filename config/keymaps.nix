@@ -90,7 +90,10 @@ in
       '';
     }
     {
-      mode = [ "n" "v" ];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<Leader>F";
       options = {
         desc = "Format injected Languages using Conform";
@@ -104,6 +107,32 @@ in
           end)
         end
       '';
+    }
+    {
+      mode = [ "n" ];
+      key = "<Leader>;";
+      options = {
+        desc = "Insert semicolon at the end of the line.";
+      };
+      action = "mmA;<Esc>`m";
+    }
+
+    # Utilities
+    {
+      mode = [ "n" ];
+      key = "<Leader><CR>";
+      options = {
+        desc = "Use LSP Fix under Cursor.";
+      };
+      action = ":lua vim.lsp.buf.code_action()<CR>";
+    }
+    {
+      mode = [ "n" ];
+      key = "<Leader>F";
+      options = {
+        desc = "Open Yazi";
+      };
+      action = ":Yazi<CR>";
     }
   ];
 }
