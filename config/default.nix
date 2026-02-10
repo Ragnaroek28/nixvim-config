@@ -26,6 +26,7 @@
     ./plugins/noice.nix
     ./plugins/todo-comments.nix
     ./plugins/auto-save.nix
+    ./plugins/terminal.nix
 
     ./lsp.nix
     ./lsp/clangd.nix
