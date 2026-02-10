@@ -15,7 +15,7 @@
     ./plugins/dropbar.nix
     ./plugins/lualine.nix
     ./plugins/barbar.nix
-    ./plugins/startup.nix
+    ./plugins/startify.nix
     ./plugins/image.nix
     ./plugins/nix.nix
     ./plugins/git.nix
