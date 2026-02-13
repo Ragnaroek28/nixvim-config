@@ -14,7 +14,6 @@
     ./plugins/yazi.nix
     ./plugins/dropbar.nix
     ./plugins/lualine.nix
-    ./plugins/barbar.nix
     ./plugins/startify.nix
     ./plugins/image.nix
     ./plugins/nix.nix
@@ -27,6 +26,7 @@
     ./plugins/todo-comments.nix
     ./plugins/auto-save.nix
     ./plugins/terminal.nix
+    ./plugins/chadtree.nix
 
     ./lsp.nix
     ./lsp/clangd.nix
