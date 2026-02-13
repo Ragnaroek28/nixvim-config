@@ -1,8 +1,11 @@
 {
   clipboard.register = "unnamedplus";
-  # no "vim.opt.completeopt = {'menu', 'menuone', 'noselect'}" available?
   opts = {
-    completeopt = [ "menu" "menuone" "noselect" ];
+    completeopt = [
+      "menu"
+      "menuone"
+      "noselect"
+    ];
     mouse = "a"; # allow the usage of the mouse
 
     # Tab
@@ -25,6 +28,13 @@
     ignorecase = true;
     smartcase = true;
   };
+
+  diagnostic.settings = {
+    virtual_text = true;
+    # optional:
+    # virtual_text = { spacing = 2; prefix = "●"; };
+  };
+
   globals = {
     mapleader = " ";
   };
