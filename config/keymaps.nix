@@ -128,6 +128,22 @@ in
     }
     {
       mode = [ "n" ];
+      key = "<Leader>d";
+      options = {
+        desc = "Show the LSP diagnostics.";
+      };
+      action = ":lua vim.diagnostic.setloclist()<CR>";
+    }
+    {
+      mode = [ "n" ];
+      key = "<Leader>f";
+      options = {
+        desc = "Open Chadtree";
+      };
+      action = ":CHADopen<CR>";
+    }
+    {
+      mode = [ "n" ];
       key = "<Leader>F";
       options = {
         desc = "Open Yazi";
