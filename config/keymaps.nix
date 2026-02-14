@@ -75,7 +75,7 @@ in
     # formatting
     {
       mode = "n";
-      key = "<Leader>f";
+      key = "<Leader>cf";
       options = {
         desc = "Format the current Buffer using Conform";
       };
@@ -94,7 +94,7 @@ in
         "n"
         "v"
       ];
-      key = "<Leader>F";
+      key = "<Leader>cF";
       options = {
         desc = "Format injected Languages using Conform";
       };
@@ -110,7 +110,7 @@ in
     }
     {
       mode = [ "n" ];
-      key = "<Leader>;";
+      key = "<Leader>c;";
       options = {
         desc = "Insert semicolon at the end of the line.";
       };
@@ -120,7 +120,7 @@ in
     # Utilities
     {
       mode = [ "n" ];
-      key = "<Leader><CR>";
+      key = "<Leader>c<CR>";
       options = {
         desc = "Use LSP Fix under Cursor.";
       };
@@ -128,7 +128,7 @@ in
     }
     {
       mode = [ "n" ];
-      key = "<Leader>d";
+      key = "<Leader>cd";
       options = {
         desc = "Show the LSP diagnostics.";
       };
@@ -149,6 +149,14 @@ in
         desc = "Open Yazi";
       };
       action = ":Yazi<CR>";
+    }
+    {
+      mode = [ "n" ];
+      key = "<Leader>g";
+      options = {
+        desc = "Open Lazygit";
+      };
+      action = ":LazyGit<CR>";
     }
   ];
 }
