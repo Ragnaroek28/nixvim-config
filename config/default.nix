@@ -27,6 +27,7 @@
     ./plugins/auto-save.nix
     ./plugins/terminal.nix
     ./plugins/chadtree.nix
+    ./plugins/distant.nix
 
     ./lsp.nix
     ./lsp/clangd.nix
