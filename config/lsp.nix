@@ -4,6 +4,7 @@ let
     silent = true;
   };
 in {
+  plugins.lspconfig.enable = true;
   lsp.keymaps = [
     {
       key = "gr";
