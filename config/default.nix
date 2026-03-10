@@ -32,5 +32,6 @@
     ./lsp.nix
     ./lsp/clangd.nix
     ./lsp/nixd.nix
+    ./lsp/gopls.nix
   ];
 }
