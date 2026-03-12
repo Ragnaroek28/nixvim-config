@@ -33,5 +33,6 @@
     ./lsp/clangd.nix
     ./lsp/nixd.nix
     ./lsp/gopls.nix
+    ./lsp/neocmake.nix
   ];
 }
