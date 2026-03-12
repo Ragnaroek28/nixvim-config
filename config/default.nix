@@ -28,6 +28,7 @@
     ./plugins/terminal.nix
     ./plugins/chadtree.nix
     ./plugins/distant.nix
+    ./plugins/cmake-tools.nix
 
     ./lsp.nix
     ./lsp/clangd.nix
