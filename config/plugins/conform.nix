@@ -10,6 +10,7 @@
         lua = [ "stylua" ];
         cpp = [ "clang-format" ];
         nix = [ "nixfmt" ];
+        go = [ "gofmt" ];
         "_" = [ "trim_whitespace" ];
       };
     };
