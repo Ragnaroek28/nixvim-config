@@ -3,6 +3,7 @@
   imports = [
     ./options.nix
     ./keymaps.nix
+    ./userCommands.nix
     ./colorscheme.nix
 
     ./plugins/blink-cmp.nix

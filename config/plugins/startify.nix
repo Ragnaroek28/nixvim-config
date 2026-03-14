@@ -12,6 +12,7 @@
         [ "Vim Reference" "h ref" ]
         [ "Open Yazi" ":Yazi" ]
         [ "Open Telescope" ":Telescope" ]
+        [ "Open Possesion" ":SessionList" ]
       ];
       custom_header = [
         ""

@@ -15,8 +15,8 @@
 
   extraConfigLua = ''
     require('nvim-possession').setup({
-      autoload = true,
-      autoprompt = true,
+      autoload = false,
+      autoprompt = false,
       autoswitch = {
         enable = true,
       }

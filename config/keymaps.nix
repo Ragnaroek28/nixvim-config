@@ -158,5 +158,39 @@ in
       };
       action = ":LazyGit<CR>";
     }
+
+    # possesion plugin
+    {
+      mode = [ "n" ];
+      key = "<Leader>sl";
+      options = {
+        desc = "List available sessions";
+      };
+      action = ":SessionList<CR>";
+    }
+    {
+      mode = [ "n" ];
+      key = "<Leader>sn";
+      options = {
+        desc = "Create new session";
+      };
+      action = ":SessionNew<CR>";
+    }
+    {
+      mode = [ "n" ];
+      key = "<Leader>su";
+      options = {
+        desc = "Update current session";
+      };
+      action = ":SessionUpdate<CR>";
+    }
+    {
+      mode = [ "n" ];
+      key = "<Leader>sd";
+      options = {
+        desc = "Delete session";
+      };
+      action = ":SessionDelete<CR>";
+    }
   ];
 }
