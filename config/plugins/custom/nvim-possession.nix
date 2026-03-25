@@ -11,6 +11,7 @@
         hash = "sha256-osybcea2DmS0qH7MvwC6geQtYwkwDzKxOOLOx3kHrVQ=";
       };
     })
+    pkgs.vimPlugins.checkmate-nvim
   ];
 
   extraConfigLua = ''
@@ -21,5 +22,7 @@
         enable = true,
       }
     })
+
+    ${builtins.readFile ./checkmate-config.lua}
   '';
 }
