@@ -32,6 +32,7 @@
     ./plugins/cmake-tools.nix
     ./plugins/fzf-lua.nix
     ./plugins/render-markdown.nix
+    ./plugins/vimtex.nix
 
     ./plugins/custom/nvim-possession.nix
 

@@ -44,12 +44,29 @@
           ];
         };
 
-        sources.default = [
-          "lsp"
-          "path"
-          "snippets"
-          "buffer"
-        ];
+        sources = {
+          default = [
+            "lsp"
+            "latex"
+            "vimtex"
+            "path"
+            "snippets"
+            "buffer"
+          ];
+          providers = {
+            vimtex = {
+              name = "vimtex";
+              module = "blink.compat.source";
+            };
+            latex = {
+              name = "Latex";
+              module = "blink-cmp-latex";
+              opts = {
+                insert_commands = true;
+              };
+            };
+          };
+        };
 
         completion = {
           menu.draw.treesitter = [ "lsp" ];

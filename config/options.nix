@@ -37,5 +37,6 @@
 
   globals = {
     mapleader = " ";
+    maplocalleader = ",";
   };
 }

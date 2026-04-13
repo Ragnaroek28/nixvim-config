@@ -38,6 +38,7 @@
         { }
         { paths = ./luasnip; }
         { paths = "$HOME/.config/nvim-local/luasnip"; }
+        { paths = "$PWD/.vim/luasnipt"; }
       ];
     };
     cmp_luasnip.enable = true;
