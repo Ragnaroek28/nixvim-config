@@ -5,6 +5,7 @@
     ./keymaps.nix
     ./userCommands.nix
     ./colorscheme.nix
+    ./extraPackages.nix
 
     ./plugins/blink-cmp.nix
     ./plugins/treesitter.nix
@@ -41,5 +42,6 @@
     ./lsp/nixd.nix
     ./lsp/gopls.nix
     ./lsp/neocmake.nix
+    ./lsp/html.nix
   ];
 }

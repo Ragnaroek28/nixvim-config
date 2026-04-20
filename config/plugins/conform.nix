@@ -11,6 +11,7 @@
         cpp = [ "clang-format" ];
         nix = [ "nixfmt" ];
         go = [ "gofmt" ];
+        html = [ "html-tidy" ];
         "_" = [ "trim_whitespace" ];
       };
     };
