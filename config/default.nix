@@ -43,5 +43,6 @@
     ./lsp/gopls.nix
     ./lsp/neocmake.nix
     ./lsp/html.nix
+    ./lsp/arduino.nix
   ];
 }
