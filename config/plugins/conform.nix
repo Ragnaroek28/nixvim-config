@@ -12,6 +12,7 @@
         nix = [ "nixfmt" ];
         go = [ "gofmt" ];
         html = [ "html-tidy" ];
+        qml = [ "qmlformat" ];
         "_" = [ "trim_whitespace" ];
       };
     };
