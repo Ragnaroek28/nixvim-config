@@ -1,5 +1,4 @@
-_:
-{
+_: {
   lsp.servers.qmlls = {
     enable = true;
     config = {

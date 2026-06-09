@@ -4,6 +4,7 @@
     ./options.nix
     ./keymaps.nix
     ./userCommands.nix
+    ./autoCmd.nix
     ./colorscheme.nix
     ./extraPackages.nix
 
