@@ -13,6 +13,7 @@
         go = [ "gofmt" ];
         html = [ "html-tidy" ];
         qml = [ "qmlformat" ];
+        zig = [ "zig" ];
         "_" = [ "trim_whitespace" ];
       };
     };

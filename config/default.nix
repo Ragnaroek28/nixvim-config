@@ -47,5 +47,6 @@
     ./lsp/arduino.nix
     ./lsp/qmlls.nix
     ./lsp/jsonls.nix
+    ./lsp/zls.nix
   ];
 }
