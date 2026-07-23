@@ -46,13 +46,15 @@
           ];
         };
 
+        snippets.preset = "luasnip";
+
         sources = {
           default = [
+            "snippets"
             "lsp"
             "latex"
             "vimtex"
             "path"
-            "snippets"
             "buffer"
           ];
           providers = {

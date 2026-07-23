@@ -2,20 +2,20 @@
   plugins = {
     luasnip = {
       enable = true;
-      luaConfig.content = ''
-        vim.cmd[[
-        " Use Enter to expand the snippet
-        imap <silent><expr> <CR> luasnip#expandable() ? '<Plug>luasnip-expand-snippet' : '<CR>'
+      # luaConfig.content = ''
+      #   vim.cmd[[
+      #   " Use Enter to expand the snippet
+      #   imap <silent><expr> <CR> luasnip#expandable() ? '<Plug>luasnip-expand-snippet' : '<CR>'
 
-        " Use Tab to jump through snippets
-        imap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>' 
-        smap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'
+      #   " Use Tab to jump through snippets
+      #   imap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'
+      #   smap <silent><expr> <Tab> luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : '<Tab>'
 
-        " Use Shift-Tab to jump backwards through snippets
-        imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
-        smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
-        ]]
-      '';
+      #   " Use Shift-Tab to jump backwards through snippets
+      #   imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
+      #   smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
+      #   ]]
+      # '';
       settings = {
         enable_autosnippets = true;
         store_selection_keys = "<Tab>";
@@ -33,12 +33,16 @@
           "plaintex"
           "tex"
         ];
+        cpp = [
+          "hpp"
+          "cxx"
+        ];
       };
       fromLua = [
         { }
         { paths = ./luasnip; }
-        { paths = "$HOME/.config/nvim-local/luasnip"; }
-        { paths = "$PWD/.vim/luasnipt"; }
+        { paths = "~/.config/nvim-local/luasnip"; }
+        { paths = "./.vim/luasnipt"; }
       ];
     };
     cmp_luasnip.enable = true;
