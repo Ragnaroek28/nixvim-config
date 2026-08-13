@@ -9,6 +9,7 @@ in
   plugins = {
     vimtex = {
       enable = true;
+      texlivePackage = null;
       settings = {
         imaps_enabled = true;
         indent_enabled = true;

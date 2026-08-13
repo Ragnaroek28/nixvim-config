@@ -7,7 +7,6 @@
       cmd = [
         "${pkgs.clang-tools}/bin/clangd"
         "--background-index"
-        # "--query-driver=/nix/store/*-clang-wrapper*/bin/clang++"
         "--clang-tidy"
         "--log=verbose"
       ];

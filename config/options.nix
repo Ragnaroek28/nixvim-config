@@ -13,6 +13,7 @@
     softtabstop = 4;
     shiftwidth = 4;
     expandtab = true; # tabs are spaces
+    smartindent = true;
 
     # UI config
     number = true;

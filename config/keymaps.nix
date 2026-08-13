@@ -120,31 +120,7 @@ in
     # Utilities
     {
       mode = [ "n" ];
-      key = "<Leader>c<CR>";
-      options = {
-        desc = "Use LSP Fix under Cursor.";
-      };
-      action = ":lua vim.lsp.buf.code_action()<CR>";
-    }
-    {
-      mode = [ "n" ];
-      key = "<Leader>cd";
-      options = {
-        desc = "Show the LSP diagnostics.";
-      };
-      action = ":lua vim.diagnostic.setloclist()<CR>";
-    }
-    {
-      mode = [ "n" ];
-      key = "<Leader>f";
-      options = {
-        desc = "Open Chadtree";
-      };
-      action = ":CHADopen<CR>";
-    }
-    {
-      mode = [ "n" ];
-      key = "<Leader>F";
+      key = "<Leader>FF";
       options = {
         desc = "Open Yazi";
       };

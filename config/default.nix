@@ -29,7 +29,6 @@
     ./plugins/todo-comments.nix
     ./plugins/auto-save.nix
     ./plugins/terminal.nix
-    ./plugins/chadtree.nix
     ./plugins/distant.nix
     ./plugins/cmake-tools.nix
     ./plugins/fzf-lua.nix
