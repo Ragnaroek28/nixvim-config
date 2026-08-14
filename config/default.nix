@@ -30,7 +30,7 @@
     ./plugins/auto-save.nix
     ./plugins/terminal.nix
     ./plugins/distant.nix
-    ./plugins/cmake-tools.nix
+    # ./plugins/cmake-tools.nix
     ./plugins/fzf-lua.nix
     ./plugins/render-markdown.nix
     ./plugins/vimtex.nix
