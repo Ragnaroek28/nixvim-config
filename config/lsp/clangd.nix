@@ -1,14 +1,19 @@
 { pkgs, ... }:
-{
+let
+  isDarwin = pkgs.stdenv.isDarwin;
+  clangdPath = if isDarwin then "/usr/bin/clangd" else "clangd";
+in {
   lsp.servers.clangd = {
     enable = true;
-    packageFallback = false;
+    package = null;
+    packageFallback = true;
     config = {
       cmd = [
-        "${pkgs.clang-tools}/bin/clangd"
+        clangdPath
         "--background-index"
         "--clang-tidy"
         "--log=verbose"
+        "--query-driver=/Users/ragnaroek/.espressif/tools/xtensa-esp-elf/**/bin/xtensa-esp32-elf-g++"
       ];
       filetypes = [
         "c"
@@ -22,7 +27,7 @@
     };
   };
   plugins.clangd-extensions = {
-    enable = true;
+    enable = false;
     enableOffsetEncodingWorkaround = true;
   };
 }
