@@ -1,6 +1,6 @@
 { inputs, self, ... }:
 
-{
+{ 
   perSystem =
     { system, ... }:
     let
@@ -29,6 +29,7 @@
           indent-blankline
           lazygit
           lualine
+          luasnip
           markdown
           neoclip
           nix-plugins
@@ -75,6 +76,7 @@
           indent-blankline
           lazygit
           lualine
+          luasnip
           markdown
           neoclip
           nix-plugins
