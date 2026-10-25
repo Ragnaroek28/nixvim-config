@@ -18,7 +18,6 @@
           auto-save
           autoclose
           blink-cmp
-          bufferline
           cmake-tools
           conform
           distant
@@ -49,6 +48,7 @@
           jsonls
           nixd
           qmlls
+          yamlls
           zls
         ];
       };
@@ -66,7 +66,6 @@
           auto-save
           autoclose
           blink-cmp
-          bufferline
           conform
           distant
           dropbar
