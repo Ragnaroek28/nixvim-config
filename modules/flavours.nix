@@ -18,6 +18,7 @@
           auto-save
           autoclose
           blink-cmp
+          ccc
           cmake-tools
           conform
           distant
