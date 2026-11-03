@@ -30,6 +30,8 @@ _: {
       smartcase = true;
     };
 
+    clipboard.register = "unnamedplus";
+
     diagnostic.settings = {
       virtual_text = true;
       # optional:
