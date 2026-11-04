@@ -1,6 +1,6 @@
 _: {
   flake.modules.nixvim.jsonls = _: {
-    lsp.servers.html = {
+    lsp.servers.jsonls = {
       enable = true;
     };
   };
