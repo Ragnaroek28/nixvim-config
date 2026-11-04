@@ -34,7 +34,7 @@ _: {
           { }
           { paths = ./luasnip; }
           { paths = "~/.config/nvim-local/luasnip"; }
-          { paths = "./.vim/luasnipt"; }
+          { paths = "./.vim/luasnip"; }
         ];
       };
       cmp_luasnip.enable = true;
