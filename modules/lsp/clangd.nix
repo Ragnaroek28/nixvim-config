@@ -1,8 +1,8 @@
 _: {
-  flake.modules.nixvim.clangd =
+  flake.modules.nixvim.clangd = 
     { pkgs, ... }:
     let
-      isDarwin = pkgs.stdenv.isDarwin;
+      isDarwin = pkgs.stdenv.hostPlatform.isDarwin;
       clangdPath = if isDarwin then "/usr/bin/clangd" else "clangd";
     in
     {

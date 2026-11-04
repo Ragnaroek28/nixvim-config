@@ -3,9 +3,9 @@ _: {
     { pkgs, ... }:
     let
       pdfViewer =
-        if pkgs.stdenv.isDarwin then
+        if pkgs.stdenv.hostPlatform.isDarwin then
           "skim"
-        else if pkgs.stdenv.isLinux then
+        else if pkgs.stdenv.hostPlatform.isLinux then
           "zathura"
         else
           "general";

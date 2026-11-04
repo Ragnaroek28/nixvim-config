@@ -48,6 +48,7 @@
           htmlls
           jsonls
           nixd
+          pkl
           qmlls
           yamlls
           zls
