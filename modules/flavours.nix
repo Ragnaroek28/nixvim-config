@@ -43,12 +43,14 @@
           which-key
           yazi
           # lsp
+          bashls
           clangd
           gopls
           htmlls
           jsonls
           nixd
           pkl
+          pylsp
           qmlls
           yamlls
           zls
