@@ -1,5 +1,5 @@
 _: {
-  flake.modules.nixvim.clangd = 
+  flake.modules.nixvim.clangd =
     { pkgs, ... }:
     let
       isDarwin = pkgs.stdenv.hostPlatform.isDarwin;
@@ -16,8 +16,13 @@ _: {
             "--background-index"
             "--clang-tidy"
             "--log=verbose"
-            "--query-driver=/Users/ragnaroek/.espressif/tools/xtensa-esp-elf/**/bin/xtensa-esp32-elf-g++"
-          ];
+          ]
+          ++ (
+            if pkgs.stdenv.hostPlatform.isDarwin then
+              "--query-driver=/Users/ragnaroek/.espressif/tools/xtensa-esp-elf/**/bin/xtensa-esp32-elf-g++"
+            else
+              [ ]
+          );
           filetypes = [
             "c"
             "cpp"
