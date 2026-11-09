@@ -11,12 +11,18 @@
             lsp_format = "fallback";
           };
           formatters_by_ft = {
-            lua = [ "stylua" ];
             cpp = [ "clang-format" ];
-            nix = [ "nixfmt" ];
+            css = [ "prettier" ];
+            elixir = [ "mix" ];
+            eelixir = [ "mix" ];
             go = [ "gofmt" ];
+            heex = [ "mix" ];
             html = [ "html-tidy" ];
+            js = [ "prettier" ];
+            lua = [ "stylua" ];
+            nix = [ "nixfmt" ];
             qml = [ "qmlformat" ];
+            scss = [ "prettier" ];
             zig = [ "zig" ];
             zsh = [
               "shellcheck"

@@ -45,6 +45,8 @@
           # lsp
           bashls
           clangd
+          # expert
+          elixirls
           gopls
           htmlls
           jsonls
